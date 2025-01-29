@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="20dp"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <EditText
+        android:id="@+id/cart_qauntity"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/spinnerbg"
+        android:hint="Enter Qauntity"
+        android:inputType="number"
+        android:textAlignment="center" />
+
+    <TextView
+        android:id="@+id/cart_total"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:fontFamily="@font/alata"
+        android:text="Total Price"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/submit_cart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="Submit" />
+
+</LinearLayout>

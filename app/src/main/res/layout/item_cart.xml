@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="15dp"
+    android:elevation="8dp"
+    app:cardCornerRadius="8dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/item_cartimg"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/img" />
+
+        <TextView
+            android:id="@+id/item_cartpname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="80dp"
+            android:layout_marginRight="40dp"
+            android:ellipsize="end"
+            android:fontFamily="@font/alata"
+            android:text="Name"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/item_cartdelete"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:fontFamily="@font/alata"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/baseline_delete_24"
+            app:tint="@color/black" />
+
+        <TextView
+            android:id="@+id/item_cartquantity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/item_cartpname"
+            android:layout_marginLeft="80dp"
+            android:fontFamily="@font/alata"
+            android:ellipsize="end"
+            android:text="Name"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/item_cartprice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/item_cartquantity"
+            android:fontFamily="@font/alata"
+            android:layout_marginLeft="80dp"
+            android:ellipsize="end"
+            android:text="Name"
+            android:textSize="20sp" />
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

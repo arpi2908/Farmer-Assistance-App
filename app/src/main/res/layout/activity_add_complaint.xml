@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Farmer.AddComplaint">
+
+
+    <include layout="@layout/toolbar" />
+
+
+    <EditText
+        android:id="@+id/addcomplaint_edt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="200dp"
+        android:background="@drawable/spinnerbg"
+        android:hint="Enter  Complaint"
+        android:minLines="7"
+        android:padding="10dp" />
+
+
+    <Button
+        android:id="@+id/addcomplaint_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="50dp"
+        android:text="Submit"
+        android:textSize="18sp" />
+
+
+</LinearLayout>

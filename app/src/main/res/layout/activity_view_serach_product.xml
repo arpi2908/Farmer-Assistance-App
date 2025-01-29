@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".User.ViewSerachProduct">
+
+    <include layout="@layout/toolbar" />
+
+
+    <EditText
+        android:id="@+id/vproductname_edt"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginTop="75dp"
+        android:background="@drawable/spinnerbg"
+        android:hint="Enter Product Name"
+        android:textAlignment="center" />
+
+    <ImageView
+        android:id="@+id/search_img"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="82dp"
+        android:layout_marginRight="20dp"
+        android:src="@drawable/search" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_viewproducts"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/vproductname_edt"
+        android:layout_marginTop="10dp" />
+
+</RelativeLayout>

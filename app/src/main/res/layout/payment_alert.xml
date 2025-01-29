@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/alertLlDebitCardPayment"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="15dp"
+            android:layout_weight=".5"
+            android:elevation="15dp"
+            android:hint="Enter Card Number"
+            tools:ignore="HardcodedText">
+
+            <EditText
+                android:id="@+id/alertEtCardNumber"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:contentDescription="Enter Card Number"
+                android:fontFamily="sans-serif-light"
+                android:importantForAutofill="no"
+                android:inputType="number"
+                android:labelFor="@id/alertEtCardNumber"
+                android:maxLength="16"
+                android:singleLine="true"
+                tools:ignore="HardcodedText" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:layout_weight=".5"
+                android:elevation="10dp"
+                android:hint="Enter CVV"
+                tools:ignore="HardcodedText">
+
+                <EditText
+                    android:id="@+id/alertEtCVV"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:contentDescription="Enter CVV"
+                    android:fontFamily="sans-serif-light"
+                    android:importantForAutofill="no"
+                    android:inputType="number"
+                    android:labelFor="@id/alertEtCVV"
+                    android:maxLength="3"
+                    android:singleLine="true"
+                    tools:ignore="HardcodedText" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:background="#e9e9e9" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:layout_weight=".5"
+                android:elevation="15dp"
+                android:hint="Enter Expiry Date"
+                tools:ignore="HardcodedText">
+
+                <EditText
+                    android:id="@+id/alertEtExpiry"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:contentDescription="Enter Expiry Date"
+                    android:fontFamily="sans-serif-light"
+                    android:importantForAutofill="no"
+
+                    android:labelFor="@id/alertEtExpiry"
+                    android:maxLength="5"
+                    android:singleLine="true"
+                    tools:ignore="HardcodedText" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/alertBtnCancel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="50"
+            android:background="?attr/colorOnPrimary"
+            android:backgroundTint="?attr/colorOnPrimary"
+            android:backgroundTintMode="src_atop"
+            android:text="CANCEL"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            tools:ignore="HardcodedText" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#e9e9e9" />
+
+        <Button
+            android:id="@+id/alertBtnPayNow"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="50"
+            android:background="?attr/colorOnPrimary"
+            android:backgroundTint="?attr/colorOnPrimary"
+            android:backgroundTintMode="src_atop"
+            android:text="PAY NOW"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            tools:ignore="HardcodedText" />
+
+    </LinearLayout>
+
+
+</LinearLayout>
